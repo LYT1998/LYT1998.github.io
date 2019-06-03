@@ -212,22 +212,7 @@
         <p>李宇婷，想明白了就回来找我吧!Ｍy tel number ：15527395650</p>
     </div>
 </script>
- <audio src="关于郑州.mp3"
-           controls="controls" preload id="music1" autoplay="autoplay" hidden>
-    </audio>
-function bf(){
-     var audio = document.getElementById('music1');
-     if(audio!==null){
-     //检测播放是否已暂停.audio.paused 在播放器播放时返回false.
-     	     alert(audio.paused);
-     if(audio.paused){
-     
-     }
-     }
- document.addEventListener("WeixinJSBridgeReady", function () {
-        document.getElementById('music1').play();
-    }, false);
-
+      <embed src="关于郑州.mp3" autostart="true" loop="true" hidden="true"></embed>
 </body>
 </html>
 
