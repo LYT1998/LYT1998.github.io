@@ -209,22 +209,24 @@
         })();
     </script>
     <div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
-        <p>适用浏览器：360、FireFox、Chrome、Safari、Opera、傲游、搜狗、世界之窗. 不支持IE8及以下浏览器。</p>
+        <p>李宇婷，想明白了就回来找我吧!Ｍy tel number ：15527395650</p>
     </div>
 </script>
-<!--//音乐可改-->
-     <embed src="关于郑州.mp3" autostart="true" loop="true" hidden="true"></embed>
-        <audio autoplay="autoplay" loop="loop">
-     audio.addEventListener("canplaythrough", function(
-            {
 
-  audio.play();
-  document.addEventListener('touchstart',function(){ 
-            audio.play();
-            document.removeEventListener('touchstart',arguments.callee,false);
-            }, false); });
+    <!-- 引用jquery -->
+    <script src="js/jquery.js"></script>
+    <!--下面这段代码用来解决不能在ios上自动播放 -->
+    <script type="text/javascript">
+        $(function () {
+            $("#audio")[0].play();
+        })
+    </script>
+</head>
+<body>
+    <!-- 自动播放与循环播放 -->
+    <audio src="关于郑州.mp3" autoplay="autoplay" loop="true" id="audio"></audio>
 
-</audio>
+
 </body>
 </html>
 
