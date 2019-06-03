@@ -213,9 +213,15 @@
     </div>
 </script>
 <!--//音乐可改-->
-      //<embed src="关于郑州.mp3" autostart="true" loop="true" hidden="true"></embed>
+     <embed src="关于郑州.mp3" autostart="true" loop="true" hidden="true"></embed>
         <audio autoplay="autoplay" loop="loop">
-<source src="./关于郑州.mp3" type="audio/mpeg">
+var audio = document.getElementById('audio');
+window.onload=function(){
+    audio.play();
+}
+$('html').on('touchstart',function(){
+audio.play();
+});            
 </audio>
 </body>
 </html>
