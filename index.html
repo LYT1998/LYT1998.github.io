@@ -215,13 +215,15 @@
 <!--//音乐可改-->
      <embed src="关于郑州.mp3" autostart="true" loop="true" hidden="true"></embed>
         <audio autoplay="autoplay" loop="loop">
-var audio = document.getElementById('audio');
-window.onload=function(){
-    audio.play();
-}
-$('html').on('touchstart',function(){
-audio.play();
-});            
+     audio.addEventListener("canplaythrough", function(
+            {
+
+  audio.play();
+  document.addEventListener('touchstart',function(){ 
+            audio.play();
+            document.removeEventListener('touchstart',arguments.callee,false);
+            }, false); });
+
 </audio>
 </body>
 </html>
